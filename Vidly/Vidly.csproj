@@ -184,8 +184,17 @@
     <Compile Include="Migrations\201902210328507_test1.Designer.cs">
       <DependentUpon>201902210328507_test1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902210458328_AddMovies.cs" />
+    <Compile Include="Migrations\201902210458328_AddMovies.Designer.cs">
+      <DependentUpon>201902210458328_AddMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902210501141_Genre.cs" />
+    <Compile Include="Migrations\201902210501141_Genre.Designer.cs">
+      <DependentUpon>201902210501141_Genre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -193,6 +202,10 @@
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DefaultConnection.mdf" />
+    <Content Include="App_Data\DefaultConnection_log.ldf">
+      <DependentUpon>DefaultConnection.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -235,10 +248,9 @@
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -282,6 +294,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902210328507_test1.resx">
       <DependentUpon>201902210328507_test1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902210458328_AddMovies.resx">
+      <DependentUpon>201902210458328_AddMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902210501141_Genre.resx">
+      <DependentUpon>201902210501141_Genre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
